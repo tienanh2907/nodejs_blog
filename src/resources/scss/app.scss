@@ -1,6 +1,42 @@
-@import 'variables';
+@import "variables";
 
-.test{
-    font-size: 1rem;
-    background-color: red;
+.card-item {
+  margin-top: 2rem;
+  min-height: 432px;
+  height: 432px;
+}
+
+.card-img-top {
+  min-height: 205px;
+  height: 205px;
+}
+
+.user-avatar {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background-color: #fff;
+  margin-right: 4px;
+}
+
+.trash-icon {
+  float: right;
+  text-decoration: none;
+}
+
+.trash-icon img {
+  width: 30px;
+  height: 30px;
+  padding: 4px;
+  margin: 4px;
+}
+
+.trash-icon img:hover {
+  background-color: #5af;
+  border-radius: 4px;
+}
+
+.checkbox-select-options{
+  width: 180px;
+  margin: 0 12px;
 }

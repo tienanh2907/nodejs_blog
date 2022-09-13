@@ -1,1 +1,20 @@
-<h1 style = "color: red;">HOME PAGE</h1>
+<div class="mt-4">
+    <div class="row">
+        {{#each post}}
+        <div class="col-sm-6 col-lg-4">
+            <div class="card card-item">
+                <a href="/posts/{{this.slug}}">
+                    <img class="card-img-top" src="{{this.image}}" alt="{{this.title}}">
+                </a>
+                <div class="card-body d-flex flex-column ">
+                    <a href="/posts/{{this.slug}}">
+                        <h5 class="card-title">{{this.title}}</h5>
+                    </a>
+                    <p class="card-text align-self-stretch flex-grow-1">{{this.content}}</p>
+                    <a href="/posts/{{this.slug}}" class="btn btn-primary">Post detail</a>
+                </div>
+            </div>
+        </div>
+        {{/each}}
+    </div>
+</div>
